@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pilihan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Form Pilihan</h1>
+    
+    <div class="form-container">
+        <header>
+            <h3>Nama: Maria Revan keo</h3>
+            <p>NIM: 235314086</p>
+            <img src="REVAN.jpeg" alt="Foto Anda" width="100">
+        </header>
+
+        <div id="formStep1">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" placeholder="Masukkan Nama">
+            <label for="numChoices">Jumlah Pilihan:</label>
+            <input type="number" id="numChoices" placeholder="Masukkan Jumlah Pilihan" min="1">
+            <button onclick="generateChoices()">OK</button>
+        </div>
+
+        <div id="formStep2" class="hidden">
+            <div id="choicesContainer"></div>
+            <button onclick="generateRadioButtons()">Submit</button>
+        </div>
+
+        <div id="formStep3" class="hidden">
+            <div id="radioButtonContainer"></div>
+            <button onclick="displaySelection()">Submit</button>
+        </div>
+
+        <div id="result" class="hidden">
+            <h3>Hasil:</h3>
+            <p id="resultText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
