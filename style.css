@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 30px;
-    background-color: #e4dede;
+    background-color: #f4f4f4;
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
 }
 
 .form-container {
-    background-color: rgb(210, 133, 133);
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -44,4 +44,9 @@ button:hover {
 
 .hidden {
     display: none;
+}
+
+input:disabled, button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
 }
