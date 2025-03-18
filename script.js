@@ -12,11 +12,10 @@ function generateChoices() {
         return;
     }
 
-    // Disable semua input & tombol di step 1
     inputs.forEach(input => input.disabled = true);
     button.disabled = true;
 
-    formStep2.classList.remove("hidden"); // Tampilkan form berikutnya
+    formStep2.classList.remove("hidden"); 
     choicesContainer.innerHTML = "";
 
     for (let i = 1; i <= numChoices; i++) {
@@ -45,11 +44,10 @@ function generateRadioButtons() {
         choices.push(choice);
     }
 
-    // Disable semua input & tombol di step 2
     inputs.forEach(input => input.disabled = true);
     button.disabled = true;
 
-    formStep3.classList.remove("hidden"); // Tampilkan form berikutnya
+    formStep3.classList.remove("hidden"); 
 
     radioButtonContainer.innerHTML = `
         <label for="selection">Pilih salah satu:</label><br>
@@ -77,11 +75,10 @@ function displaySelection() {
         return;
     }
 
-    // Disable semua radio button & tombol di step 3
     inputs.forEach(input => input.disabled = true);
     button.disabled = true;
 
-    result.classList.remove("hidden"); // Tampilkan hasil
+    result.classList.remove("hidden"); 
 
     let choicesText = [];
     for (let i = 1; i <= numChoices; i++) {
